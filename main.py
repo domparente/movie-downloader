@@ -22,7 +22,7 @@ try:
     options.add_argument('--disable-gpu')
     options.add_argument('--enable-unsafe-swiftshader')
 
-    service = Service(executable_path='./chromedriver.exe')  # Adjust path as necessary
+    service = Service(executable_path='./chromedriver')  # Adjust path as necessary
     driver = webdriver.Chrome(service=service, options=options)
 
     if "button_clicked" not in st.session_state:
